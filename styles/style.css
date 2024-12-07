@@ -10,10 +10,11 @@ main {
   }
   
   .header {
+    
     display: grid;
     grid-template-columns: 1.51fr 1fr 1.5fr;
     align-items: center;
-    padding: 92px 51px 89px;
+    padding: 92px 24px 92px 24px;
   }
   
   .header__links-list {
@@ -184,11 +185,13 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
+    row-gap: 25px;
     list-style: none;
   }
   
   .lost__card-list-item {
     height: 100%;
+    min-height: 563px;
   }
   
   .card-link {
@@ -308,7 +311,16 @@ main {
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 180px 50px 80px;
+    
+    flex-shrink: 0;
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin:auto;
+    margin-top: 156px;
+    margin-bottom: 90px;
   }
   
   .footer__social-icon {
